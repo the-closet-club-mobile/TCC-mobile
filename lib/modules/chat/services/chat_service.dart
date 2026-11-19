@@ -85,7 +85,7 @@ class ChatService {
     try {
       data = await request.postJson(
         _url('/conversations/$conversationId/messages/'),
-        jsonEncode({'content': content, if (replyTo != null) 'reply_to': replyTo}),
+        jsonEncode({'content': content, 'reply_to': ?replyTo}),
       );
     } catch (_) {
       throw const ChatException('Could not reach the server.');
