@@ -1,4 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
+import 'package:pbp_django_auth/pbp_django_auth.dart';
+import 'package:provider/provider.dart';
+import 'package:the_closet_club_mobile/core/app_theme.dart';
 import 'package:the_closet_club_mobile/menu.dart';
 
 void main() {
@@ -10,13 +13,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'The Closet Club',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
-        useMaterial3: true,
+    // One shared CookieRequest keeps the Django session cookie for every module.
+    return Provider<CookieRequest>(
+      create: (_) => CookieRequest(),
+      child: MaterialApp(
+        title: 'The Closet Club',
+        theme: AppTheme.light,
+        home: const MyHomePage(),
       ),
-      home: const MyHomePage(),
     );
   }
 }

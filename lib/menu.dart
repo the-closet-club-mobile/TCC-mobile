@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:the_closet_club_mobile/modules/auth/screens/auth_screen.dart';
 import 'package:the_closet_club_mobile/modules/chat/screens/chat_screen.dart';
 import 'package:the_closet_club_mobile/modules/closet/screens/closet_screen.dart';
@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
           NavigationDestination(icon: Icon(Icons.checkroom), label: 'Closet'),
           NavigationDestination(icon: Icon(Icons.swap_horiz), label: 'Swap'),
           NavigationDestination(icon: Icon(Icons.chat_bubble_outline), label: 'Chat'),
-          NavigationDestination(icon: Icon(Icons.person_outline), label: 'Akun'),
+          NavigationDestination(icon: Icon(Icons.person_outline), label: 'Account'),
         ],
       ),
     );
