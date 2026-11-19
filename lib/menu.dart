@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
           NavigationDestination(icon: Icon(Icons.checkroom), label: 'Closet'),
           NavigationDestination(icon: Icon(Icons.swap_horiz), label: 'Swap'),
           NavigationDestination(icon: Icon(Icons.chat_bubble_outline), label: 'Chat'),
-          NavigationDestination(icon: Icon(Icons.person_outline), label: 'Akun'),
+          NavigationDestination(icon: Icon(Icons.person_outline), label: 'Account'),
         ],
       ),
     );
