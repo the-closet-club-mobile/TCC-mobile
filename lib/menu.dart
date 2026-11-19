@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:the_closet_club_mobile/modules/auth/screens/auth_screen.dart';
 import 'package:the_closet_club_mobile/modules/chat/screens/chat_screen.dart';
 import 'package:the_closet_club_mobile/modules/closet/screens/closet_screen.dart';
