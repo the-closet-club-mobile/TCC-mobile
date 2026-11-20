@@ -112,6 +112,17 @@ Endpoint `/api/accounts/profile/` dan `/api/accounts/verification/` hanya dapat 
 
 ---
 
+### Daftar Endpoint Modul Closet
+
+| Method | Endpoint | Fungsi |
+|---|---|---|
+| GET | /closet/api/items/ | Daftar pakaian milik pengguna yang sedang login, terbaru lebih dulu. |
+| GET | /closet/api/items/<id>/ | Detail satu pakaian milik pengguna (milik orang lain menerima 404). |
+
+Seluruh *endpoint* hanya dapat diakses setelah login. Endpoint tambah, ubah, hapus, dan ubah status pakaian menyusul sebelum pengumpulan akhir.
+
+---
+
 ## Teknologi dan API
 
 ### Teknologi yang Digunakan (*Technology Stack*)
