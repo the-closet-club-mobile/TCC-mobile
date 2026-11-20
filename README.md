@@ -98,6 +98,15 @@ Karena situs web dan aplikasi *mobile* memakai basis data yang sama, pesan yang 
 
 Seluruh *endpoint* hanya dapat diakses setelah login. Pengguna yang bukan peserta percakapan menerima respons 404, dan pengguna yang saling memblokir menerima respons 403 saat mengirim pesan.
 
+### Daftar Endpoint Modul Closet                                                                                                               
+                                                                                                                                                                                                                                                                            
+| Method | Endpoint | Fungsi |                                                                                                                 
+|---|---|---|                                                                                                                                  
+| GET | `/closet/api/items/` | Daftar pakaian milik pengguna yang sedang login, terbaru lebih dulu. |                                          
+| GET | `/closet/api/items/<id>/` | Detail satu pakaian milik pengguna (milik orang lain menerima 404). |                                      
+                                                                                                                                                                                                                                                                                      
+Seluruh *endpoint* hanya dapat diakses setelah login. Endpoint tambah, ubah, hapus, dan ubah status pakaian menyusul sebelum pengumpulan akhir.
+
 ---
 
 ## Teknologi dan API
