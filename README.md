@@ -98,6 +98,18 @@ Karena situs web dan aplikasi *mobile* memakai basis data yang sama, pesan yang 
 
 Seluruh *endpoint* hanya dapat diakses setelah login. Pengguna yang bukan peserta percakapan menerima respons 404, dan pengguna yang saling memblokir menerima respons 403 saat mengirim pesan.
 
+### Daftar Endpoint Modul Accounts
+
+| Method | Endpoint | Fungsi |
+|---|---|---|
+| GET | `/api/accounts/users/` | Daftar seluruh pengguna yang terdaftar, diurutkan berdasarkan username. |
+| GET, PUT, PATCH | `/api/accounts/profile/` | Melihat dan memperbarui profil pengguna yang sedang login (wajib login). |
+| GET | `/api/accounts/users/<username>/` | Detail profil publik pengguna berdasarkan username. |
+| GET | `/api/accounts/users/<username>/reviews/` | Daftar ulasan (review) yang diterima oleh pengguna tertentu, terbaru lebih dulu. |
+| GET | `/api/accounts/verification/` | Melihat status pengajuan verifikasi akun pengguna yang sedang login (wajib login). |
+
+Endpoint `/api/accounts/profile/` dan `/api/accounts/verification/` hanya dapat diakses setelah login. Endpoint autentikasi (login, register, logout), pengajuan verifikasi, hapus akun, serta tambah dan ubah ulasan menyusul sebelum pengumpulan akhir.
+
 ---
 
 ## Teknologi dan API
