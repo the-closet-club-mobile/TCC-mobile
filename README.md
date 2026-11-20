@@ -4,7 +4,7 @@
 
 The Closet Club (TCC) Mobile adalah versi *mobile* dari platform media sosial dan barter busana The Closet Club yang menghubungkan para pecinta gaya hidup berkelanjutan (*sustainable living*). Aplikasi ini dibangun dengan Flutter dan terhubung ke situs web TCC dari Proyek Tengah Semester melalui *web service* Django REST Framework, sehingga pertukaran pakaian (*swap/barter*), lemari digital (*digital closet*), inspirasi *outfit feed*, dan komunikasi langsung dapat diakses langsung dari ponsel.
 
-[**Situs Web The Closet Club**](https://faiz-yusuf51-the-closet-club.pws.cs.ui.ac.id) · [**Desain Figma**](-)
+[**Situs Web The Closet Club**](https://faiz-yusuf51-the-closet-club.pws.cs.ui.ac.id) · [**Desain Figma**](https://www.figma.com/design/36o8v7Kpihl96GwMuIg4Of/TCC?node-id=333-2249&t=ZflLifSc8F03UHF3-1)
 
 ---
 
@@ -170,7 +170,7 @@ flutter run
 
 Referensi desain purwarupa (*wireframe* dan *high-fidelity mockups*) aplikasi The Closet Club tersedia pada tautan Figma berikut:
 
-[**Buka Desain The Closet Club di Figma**](-)
+[**Buka Desain The Closet Club di Figma**](https://www.figma.com/design/36o8v7Kpihl96GwMuIg4Of/TCC?node-id=333-2249&t=ZflLifSc8F03UHF3-1)
 
 ---
 
